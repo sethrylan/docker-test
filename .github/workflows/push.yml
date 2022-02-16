@@ -23,5 +23,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: sethrylan/one-and-half:latest
+        tags: ghcr.io/sethrylan/one-and-half:latest
 
