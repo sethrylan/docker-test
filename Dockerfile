@@ -1,3 +1,3 @@
 FROM busybox
 
-RUN truncate -s 1500M one-and-a-half.txt
+RUN truncate -s 3000M one-and-a-half.txt
