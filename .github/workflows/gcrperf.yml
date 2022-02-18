@@ -3,7 +3,7 @@ name: perf
 on: workflow_dispatch
 
 jobs:
-  push-image:
+  perfrun:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
