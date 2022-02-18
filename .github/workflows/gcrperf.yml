@@ -16,4 +16,4 @@ jobs:
     - name: 'Use gcloud CLI'
       run: >
         gcloud info &&
-        gsutil perfdiag 
+        gsutil perfdiag -s 1500MB gs://gsutil-perf-test
