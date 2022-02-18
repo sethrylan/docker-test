@@ -16,4 +16,9 @@ jobs:
     - name: 'Use gcloud CLI'
       run: >
         gcloud info &&
-        gsutil perfdiag -s 1500MB gs://gsutil-perf-test
+        gsutil perfdiag -o output.json -s 1500MB gs://gsutil-perf-test
+    - name: 'Upload Report'
+      uses: actions/upload-artifact@v2
+      with:
+        name: output.json
+        path: output.json
