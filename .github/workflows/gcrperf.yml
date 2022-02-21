@@ -18,6 +18,10 @@ jobs:
         gcloud info &&
         gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test &&
         gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test &&
+        gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test &&
+        gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test &&
+        gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test &&
+        gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test &&
         gsutil perfdiag -t wthru_file,wthru -n 15 -s 1500MB -o output.json gs://gsutil-perf-test
 
     - name: 'Upload Report'
