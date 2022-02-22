@@ -1,0 +1,12 @@
+name: perf
+
+on: workflow_dispatch
+
+jobs:
+  ac:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: 'Use gcloud CLI'
+      run: >
+        echo $ACTIONS_CACHE_URL
